@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+  background-repeat: repeat-x;
+}
+
+
+ header {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff7795;
+    color: rgb(51, 46, 46);
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+  } 
+
+  
+   header a {
+    display: inline-flex;
+    justify-content: space-around;
+    color: rgb(51, 46, 46);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  header i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  } 
+
+ header i:hover{
+    color: #fff;
+    transform: translateY(-3px);
+  }
+
+  header a:hover{
+    color: #fff;
+    transform: translateY(-3px);
+  }
+ 
+  /* QUEM SOMOS */
+
+  .quemSomos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .quemSomos h1{
+    font-size: 55px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color:  rgb(51, 46, 46);
+}
+
+.sectionP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.sectionP p{
+    font-size: 18px;
+    font-weight: 540;
+    width: 40%;
+    backdrop-filter: blur(4px);
+}
+
+.fotos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+}
+
+.fotos img{
+    border-radius: 50%;
+    display: flex;
+    max-height: 25%;
+    max-width: 25%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.fotos img:hover{
+  transform: translateY(-5px);
+}
+
+/* FAÇA UMA DOAÇÃO */
+
+.cabecalhodoacao{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cabecalhodoacao h1{
+  font-size: 55px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color:  rgb(51, 46, 46);
+}
+
+
+
+/* CARDS  */ 
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 300px;
+}
+
+.card-body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-top{
+  width: 300px;
+  height: 300px;
+}
+
+.btn{
+  background-color:  #ff7795;
+}
+
+
+
+
+
+/* CONTATOS */
+
+.section2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalhocontatos{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cabecalhocontatos h1{
+  font-size: 55px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color:  rgb(51, 46, 46);
+}
+
+
+
+
+/* RODAPÉ*/
+
+ footer{
+    margin-top: 30px;
+    background-color: #ff7795;
+    display: flex;
+    justify-content: center;
+ }
+
+
+ @media(max-width:768px){
+  h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  body{
+    background-repeat: repeat-y;
+  }
+  
+  header{
+    width: 100%;
+  }
+
+  header a{
+    display: none;
+  }
+
+  header i{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sectionP{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sectionP p{
+    width: 100%;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+ }
